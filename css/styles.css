@@ -182,6 +182,9 @@ letter-spacing: 0.03em;
     line-height: 1.87;
     letter-spacing: 0.03em;
 }
+
+/*---ФУТЕР--*/
+
 footer{
     background-color: #2F303A;
 }
@@ -212,3 +215,14 @@ font-style: normal;
 .address-item:focus{
     color: var(--accent-color);
 }
+
+.footer-logo{
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+color: #FFFFFF;
+}
+
