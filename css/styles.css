@@ -3,12 +3,16 @@
   --title-text-color: #757575;
   --accent-color: #2196F3;
   --primary-white-color:#FFFFFF;
+  --secondary-background-color: #f5f4fa; 
+  --hero-background-color: #2F303A;
+  --color-foter-contact: rgba(255, 255, 255, 0.6);
+
 }
 
 body{
     font-family: 'Roboto', sans-serif;
     color: var(--primary-text-color);
-    background-color: #FFFFFF;
+    background-color: var(--primary-white-color);
     letter-spacing: 0.03em;
 }
 /*--основной цвет #212121 ----*/
@@ -42,7 +46,7 @@ text-decoration: none;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--title-text-color);
+    color: var(--primary-text-color);
 
 }
 .header-link:hover,
@@ -55,16 +59,27 @@ text-decoration: none;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    color: var(--title-text-color);
+    text-decoration: none;
+}
+.header-mail:hover,
+.header-mail:focus{
     color: var(--accent-color);
 }
-
 .header-tel{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
+    text-decoration: none;
 }
+
+.header-tel:hover,
+.header-tel:focus{
+    color: var(--accent-color);
+}
+
 .button{
     color: var(--primary-text-color);
     background-color: var(--primary-white-color);
@@ -76,26 +91,28 @@ text-decoration: none;
     letter-spacing: 0.06em;
 }
 .button.primary{    
-    color: var(--primary-white-color);
-    background-color: var(--accent-color);
+    color: var(--primary-text-color);
+    background-color: var(--secondary-background-color);
     cursor: pointer;
 }
-.button.primary:hover
+.button.primary:hover,
 .button.primary:focus{
-    color: #2196F3;
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
 }
 .button.secondary{
     color: var(--primary-text-color);
-    background-color: #F5F4FA;
+    background-color: var(--secondary-background-color);
     cursor: pointer;
 }
-.button.secondary:hover
+.button.secondary:hover,
 .button.secondary:focus{
-    color: #2196F3;
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
 }
 /*------------------------HERO--------------------------*/
 .hero{
-    background-color: #2F303A;
+    background-color: var(--hero-background-color);
 }
 .hero-title{
     font-family: 'Roboto', sans-serif;
@@ -129,7 +146,7 @@ letter-spacing: 0.03em;
 color: var(--primary-text-color);
 }
 .feature-list .title{
-    color:var(--primary-text-color);
+    color: var(--primary-text-color);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -147,7 +164,7 @@ color: var(--primary-text-color);
 background-color: var(--primary-white-color);
 }
 .section-team{
-    background-color: #F5F4FA;
+    background-color: var(--secondary-background-color);
 }
 .team-list .title{
 color: var(--primary-text-color);
@@ -155,7 +172,7 @@ font-weight: 500;
 font-size: 16px;
 line-height: 1.18;
 letter-spacing: 0.03em;
-background-color: var(--primary-white-color);
+
 }
 .team-list p{
 color: var(--title-text-color);
@@ -163,6 +180,9 @@ font-weight: 400;
 font-size: 16px;
 line-height: 1.18;
 letter-spacing: 0.03em;
+}
+.team-list-employee{
+    background-color: var(--primary-white-color);
 }
 .section-project{
     background-color: var(--primary-white-color);
@@ -186,7 +206,7 @@ letter-spacing: 0.03em;
 /*---ФУТЕР--*/
 
 footer{
-    background-color: #2F303A;
+    background-color: var(--hero-background-color);
 }
 .contact{
     font-style: normal;
@@ -197,7 +217,7 @@ font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
-color: rgba(255, 255, 255, 0.6);
+color: var(--color-foter-contact);
 text-decoration: none;
 font-style: normal;
 }
@@ -207,12 +227,16 @@ font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
-color: #FFFFFF;
+color: var(--primary-white-color);
 text-decoration: none;
 font-style: normal;
 }
 .address-item:hover,
 .address-item:focus{
+    color: var(--accent-color);
+}
+.address-item-map:hover,
+.address-item-map:focus{
     color: var(--accent-color);
 }
 
@@ -223,6 +247,6 @@ font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
-color: #FFFFFF;
+color: var(--primary-white-color);
 }
 
