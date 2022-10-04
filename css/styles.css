@@ -83,7 +83,7 @@ text-decoration: none;
 
 .button{
     color: var(--primary-text-color);
-    background-color: var(--primary-white-color);
+    background-color: var(--accent-color);
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
@@ -93,7 +93,7 @@ text-decoration: none;
 }
 .button.primary{    
     color: var(--primary-text-color);
-    background-color: var(--secondary-background-color);
+    background-color: var(--accent-color);
     cursor: pointer;
 }
 .button.primary:hover,
